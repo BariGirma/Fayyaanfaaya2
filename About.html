@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="bori.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                 <li><a href="service.html">SERVICE</a></li>
+                  <li><a href="About.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="sign.html">SIGN UP</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      <section class="about">
+<h1>About Us</h1>
+<p style="font-size: 30px; font-weight: 300; top: 30px;">tajaajiloota nuti kenninu <br><br>kanneen armaan gadiiti</p>
+<div class="row">
+  <div class="about-col">
+ <img src="doctor.png" >
+ <div class="layer">
+  <h3>GORSA DHIBEE KEESSOON WALQABATAN</h3>
+ </div>   
+  </div>
+  <div class="about-col">
+ <img src="doctor.png" >
+ <div class="layer">
+  <h3>MAALUMMAA QORICHOOTAA FI DHIBEE KEESSOO</h3>
+ </div>   
+  </div>
+  <div class="about-col">
+ <img src="doctor.png" >
+ <div class="layer">
+  <h3>QUSANNAA MAATII</h3>
+ </div>   
+  </div>
+</div>
+</section>
+
+    </section>
+      <div class="text-box">
+        
+      </div>
+      
+
+<section class="footer">
+  <h4>About Me</h4>
+  <p>Ani Barataa medicine waggaa afuraffaati. <br> yuuniversiitii Amboottin baradha</p>
+  
+  <div class="icons">
+    <a href="https://t.me/@bar1352" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+    <a href="https://www.tiktok.com/@getvalue23" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/@zackmultimedia123" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.facebook.com/yourFacebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+</section>
+<SCript>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+       navLinks.style.right = "0px" ;
+    }
+    function hideMenu() {
+       navLinks.style.right = "-200px" ;
+    }
+</SCript>
+</body>
+</html>

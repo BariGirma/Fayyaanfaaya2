@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body{
+      background-image: url(Fantasy\ Waterfall\ In\ Lush\ Jungle.jpeg);  
+    }
+  </style>
+</head>
+<body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="bori.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                 <li><a href="service.html">SERVICE</a></li>
+                  <li><a href="About.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="sign.html">SIGN UP</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      <section class="servive">
+<h1 style="color: #fff;">Service We Offer </h1>
+<p>Tajaajiloota nuti kenninu kanneen armaan gadiiti</p>
+<div class="row">
+  <div class="service-column">
+    <h3>Fayyaa</h3>
+    <p>fayyaa irratti gorsa gahaa ni kennina.</p>
+  </div>
+
+<div class="service-column">
+    <h3>Teeknoloojii</h3>
+    <p>dhimmoota teeknoloojii dhan walqabatan irrattii <br>Odeeffannoo gahaa fi quubsaa ni kennina</p>
+  </div>
+<div class="service-column">
+    <h3>Online Trading</h3>
+    <p>daldala online akkamitti akka hojjetame karaa ni qabsiisna.</p>
+  </div>
+</div>
+</section>
+
+</section>
+<SCript>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+       navLinks.style.right = "0px" ;
+    }
+    function hideMenu() {
+       navLinks.style.right = "-200px" ;
+    }
+</SCript>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+   <section class="header">
+      <nav>
+        <a href="index.html"> <img src="bori.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                 <li><a href="service.html">SERVICE</a></li>
+                  <li><a href="About.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="sign.html">SIGN UP</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      <h1 style="text-align: center;margin-top: 20%; color: #fff;font-weight: 600;">MIIDIYAA HAWAASUMMAA KOO ASII GADII <BR>KANA FAYYADAMUUN NA QUNNAMAA</h1>
+    </section>
+    <section class="footer">
+  <h4 style="color: #fff; ;">About us </h4>
+  <p>Odeeffannoo Dabalataaf Asiin Qunnamuu Dandeessu</p>
+  
+  <div class="icons">
+    <a href="https://t.me/@bar1352" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+    <a href="https://www.tiktok.com/@getvalue23" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/@zackmultimedia123" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.facebook.com/yourFacebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+</section>
+<SCript>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+       navLinks.style.right = "0px" ;
+    }
+    function hideMenu() {
+       navLinks.style.right = "-200px" ;
+    }
+</SCript>
+</body>
+</html>

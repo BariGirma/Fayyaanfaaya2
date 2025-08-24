@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Background */
+    body {
+      background-image: url("your-background-image.jpeg"); /* Replace this with your image later */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Overlay for better readability */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+      z-index: 0;
+    }
+
+    /* Sign-up Form Container */
+    .signup-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      width: 350px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .signup-container h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .signup-container input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .signup-container button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .signup-container button:hover {
+      background-color: #45a049;
+    }
+
+    .signup-container p {
+      margin-top: 15px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .signup-container p a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .signup-container p a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"> <img src="bori.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                 <li><a href="service.html">SERVICE</a></li>
+                  <li><a href="About.html">ABOUT</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="sign.html">SIGN UP</a></li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+
+  <div  class = "signup-container" style="center;align-items: center; left: 20%; right: 50%; top: 170%;">
+    <h2>Create Account</h2>
+    <form id="signs">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit" onclick="showMenu1()">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">  <button type="button" onclick="showMesg()">Login</button></a></p>
+  </div>
+  </section>
+<SCript>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+       navLinks.style.right = "0px" ;
+    }
+    function hideMenu() {
+       navLinks.style.right = "-200px" ;
+    }
+    let sign = document.getElementById("signup");
+     function showMesg(){
+      alert("You are directed to login form ")
+    }
+    let signs = document.getElementById("signs");
+     function showMenu1(){
+      alert("YOUR FORM IS SUCCESSFULLY SUMBITTED!")
+     }
+</SCript>
+</body>
+</html>
